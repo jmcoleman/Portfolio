@@ -48,7 +48,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- Uses image hover effects from Mike Tricking https://miketricking.github.io/bootstrap-image-hover/
+- Uses image hover effects from Mike Young https://miketricking.github.io/bootstrap-image-hover/
 
 - Uses Lightbox 2.0 from Lokesh Dhakar (https://twitter.com/lokesh) which is hosted on github at <https://github.com/lokesh/lightbox2/>
 
