@@ -4,7 +4,7 @@ This is my updated Portfolio site.
 
 ## Getting Started
 
-This project showcases my project work to date.
+This project showcases my project work to date with links to the respective project deployments and repos.
 
 ### Prerequisites
 
@@ -20,7 +20,7 @@ There are no automated tests.
 
 ## Deployment
 
-TBD
+The project is deployed at https://jmcoleman.github.io/Portfolio/.
 
 ## Built With
 
@@ -35,7 +35,7 @@ N/A
 
 ## Versioning
 
-Version .5
+Version 1.0
 
 ## Authors
 
@@ -48,7 +48,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- Uses image hover effects from https://miketricking.github.io/bootstrap-image-hover/
+- Uses image hover effects from Mike Tricking https://miketricking.github.io/bootstrap-image-hover/
 
-- Uses Lightbox 2.0 from Lokesh Dhakar (<https://twitter.com/lokesh>) which is hosted on github at <https://github.com/lokesh/lightbox2/>
+- Uses Lightbox 2.0 from Lokesh Dhakar (https://twitter.com/lokesh) which is hosted on github at <https://github.com/lokesh/lightbox2/>
 
