@@ -1,3 +1,23 @@
+body, html {
+  height: 100%;
+  min-width: 6em;
+}
+
+.main-background { 
+  /* The image used */
+  /* background-image: url("../images/footer_lodyas.png"); */
+  background-color: #f6f6f6;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Creates a parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #main-header img {
   width: 100%;
   height: 100%;
@@ -17,12 +37,9 @@
   background: #000;
 }
 
-@media (min-width: 1199px) {
-  .port-item {
-    padding: 3em !important;
-  }
-}
-
+/**************************************
+** Hover effects
+**************************************/
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -102,4 +119,27 @@
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+/**************************************
+** Media queries
+**************************************/
+/* @media(max-width:544px) {
+  .fa-2x{
+    font-size: 2em !important; */
+    /* line-height: 150px; */
+  /* }
+} */
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+      background-attachment: scroll;
+  }
 }
