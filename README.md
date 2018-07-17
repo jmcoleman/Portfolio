@@ -16,7 +16,7 @@ To get a development environment up and running, clone the repository locally.
 
 ## Running tests
 
-There are no automated tests.
+No testing libraries have been utilized as of yet.
 
 ## Deployment
 
@@ -44,7 +44,7 @@ Version 1.0
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 

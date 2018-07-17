@@ -100,13 +100,13 @@
         <div id="about" class="collapse">
             <div class="card card-body bg-primary text-white py-5">
                 <h2>Hello.</h2>
-                <p class="lead">So glad you stopped by.  Check out these fun projects I've been working on.  I'd love to get your thoughts and input. Perhaps we can team up to build even more cool stuff together. Give it some thought.  You know you want to!
+                <p class="lead">So glad you stopped by.  Check out these fun projects I've been working on.  I'd love to get your thoughts and input.
                 </p>
             </div>
         
             <div class="card card-body py-4">
                 <h3>What I Do</h3>
-                <p class="lead">Highlights of my web development skills included below.  After all, that is what this showcase is all about.</p>
+                <p class="lead">Highlights of my web development skills are below.  After all, that is what this showcase is all about.</p>
                 <hr>
                 <h4>HTML 5</h4>
                 <div class="progress mb-3">
@@ -299,14 +299,14 @@
         
             <div class="card card-body py-4">
                 <h3>Get In Touch</h3>
-                <p class="lead">Use the form below or contact me directly at all the usual places.</p>
+                <p class="lead">Reach me at any of the below.</p>
                 <ul>
                     <li>Email: <a href="mailto:jenni.m.coleman@gmail.com">jenni.m.coleman@gmail.com</a></li>
                     <li>Github: <a href="https://github.com/jmcoleman">https://github.com/jmcoleman</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/jennimcoleman/">https://www.linkedin.com/in/jennimcoleman</a></li>
                 </ul>
 
-                <form action="mailto:jenni.m.coleman@gmail.com?Subject=[AUTO] Portfolio" method="post" enctype="text/plain">
+                <form action="mailto:jenni.m.coleman@gmail.com?Subject=[AUTO] Portfolio" method="post" enctype="text/plain" hidden>
                     <div class="form-group">
                         <div class="input-group input-group-lg">
                         <div class="input-group-prepend">
@@ -314,7 +314,7 @@
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
-                        <input id="name" name="name" type="text" class="form-control bg-light" placeholder="Name">
+                        <input id="input-name" name="name" type="text" class="form-control bg-light" placeholder="Name">
                         </div>
                     </div>
             
@@ -325,7 +325,7 @@
                                 <i class="fas fa-envelope"></i>
                             </span>
                         </div>
-                        <input id="mail" name="mail" type="email" class="form-control bg-light" placeholder="Email">
+                        <input id="input-email" name="email" type="email" class="form-control bg-light" placeholder="Email">
                         </div>
                     </div>
             
@@ -336,11 +336,11 @@
                                 <i class="fas fa-pencil-alt"></i>
                             </span>
                         </div>
-                        <textarea id="message" name="message" class="form-control bg-light" placeholder="Message"></textarea>
+                        <textarea id="input-message" name="message" class="form-control bg-light" placeholder="Message"></textarea>
                         </div>
                     </div>
             
-                    <input name="submit" type="submit" value="Send" class="btn btn-info btn-block btn-lg">
+                    <input id="btn-submit-contact" name="submit" type="submit" value="Send" class="btn btn-info btn-block btn-lg">
                 </form>
             </div>
         </div>
@@ -400,22 +400,8 @@
     <!-- Lightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-    <script>
-        // collapsible area
-        $('.port-item').click(function () {
-            $('.collapse').collapse('hide');
-        });
-        
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
+    <!-- local js files -->
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 
-        // Lightbox Init
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-            $(this).ekkoLightbox({
-                alwaysShowClose: true
-            });
-        });
-    </script>
 </body>
 </html>
