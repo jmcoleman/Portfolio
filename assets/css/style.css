@@ -32,9 +32,79 @@ body, html {
   cursor: pointer;
 }
 
+/****************************
+** Colors
+*****************************/
 .bg-black {
   color: #fff;
   background: #000;
+}
+
+/* Serene and spa like */
+.bg-2 {
+  color: #fff;
+  background: #3C5A7C;
+}
+/*
+.bg-1 {
+  color: #fff;
+  background: #5BC0EB;
+}
+*/
+.bg-3 {
+  color: #fff;
+  background: #DBD56E;
+}
+
+.bg-4 {
+  color: #fff;
+  background: #FC7753;
+}
+
+.border-2 {
+  border-color: #3C5A7C !important;
+}
+
+/*
+.border-1 {
+  border-color: #5BC0EB !important;
+}
+*/
+
+.border-3 {
+  border-color: #DBD56E !important;
+}
+
+.border-4 {
+  border-color: #FC7753 !important;
+}
+
+.bg-dark1 {
+  background-color: #3C5A7C !important;
+}
+
+.bg-black1 {
+  color: #fff;
+  /* background-color: #1D2C3C !important; */
+  background-color: #001011 !important;
+}
+
+.btn-2 {
+  color: #fff;
+  background-color: #3C5A7C;
+  border-color: #3C5A7C !important;
+}
+
+.btn-3 {
+  color: #fff;
+  background-color: #DBD56E;
+  border-color: #DBD56E !important;
+}
+
+.btn-4 {
+  color: #fff;
+  background-color: #FC7753;
+  border-color: #FC7753 !important;
 }
 
 /**************************************
@@ -124,13 +194,6 @@ body, html {
 /**************************************
 ** Media queries
 **************************************/
-/* @media(max-width:544px) {
-  .fa-2x{
-    font-size: 2em !important; */
-    /* line-height: 150px; */
-  /* }
-} */
-
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
@@ -138,9 +201,9 @@ body, html {
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
+ @media only screen and (max-device-width: 1366px) {
   .parallax {
       background-attachment: scroll;
-  }
+  } 
 }
 

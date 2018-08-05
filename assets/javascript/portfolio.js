@@ -23,9 +23,57 @@ function ProperCase(txt) {
 ///////////////////////////////////////////
 $(document).ready (function() {
 
+    var tabSet = {
+        "#about": 1,
+        "#resume": 1,
+        "#projects": 1,
+        "#contact": 1
+    };
+
     // collapsible area
     $('.port-item').click(function () {
+
+        var targetTab = $(this).attr("data-target");
+
+        // alert('We are on tab: ' + targetTab + "\n" +
+        //     'is being collapsed: ' + $(targetTab).hasClass('show')
+        // );
+
+        $("#resume-download-btn").removeClass('btn-primary btn-dark btn-2 btn-3 btn-4 btn-outline-light');
+
+        if (targetTab in tabSet) {
+            // if the area is being collapsed, will have show on it currently
+            if ($(targetTab).hasClass('show')) {
+                $('#main-footer').removeClass('bg-light');
+                $('#main-footer').addClass('bg-dark');
+
+                $("#resume-download-btn").addClass('btn-outline-light');
+            } else {
+                $('#main-footer').removeClass('bg-dark');
+                $('#main-footer').addClass('bg-light');
+
+                switch (targetTab) {
+                    case "#about":
+                        $("#resume-download-btn").addClass('btn-primary');
+                        break;
+                    case "#resume":
+                    $("#resume-download-btn").addClass('btn-dark');
+                        break;
+                    case "#projects":
+                    $("#resume-download-btn").addClass('btn-dark');
+                        break;
+                    case "#contact":
+                        $("#resume-download-btn").addClass('btn-dark');
+                        break;
+                    default:
+                        console.log("Tab is not handled in collapse");
+                }
+
+            }
+        };
+
         $('.collapse').collapse('hide');
+
     });
     
     // Get the current year for the copyright
