@@ -54,7 +54,7 @@ $(document).ready (function() {
 
                 switch (targetTab) {
                     case "#about":
-                        $("#resume-download-btn").addClass('btn-primary');
+                        $("#resume-download-btn").addClass('btn-dark');
                         break;
                     case "#resume":
                     $("#resume-download-btn").addClass('btn-dark');
